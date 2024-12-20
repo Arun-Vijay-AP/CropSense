@@ -4,9 +4,9 @@ import pandas as pd
 import pickle
 
 # importing model
-model = pickle.load(open(r'C:\Users\Ricky Martin\Documents\crop\User_Input\random_forest_model.pkl', 'rb'))
-sc = pickle.load(open(r'C:\Users\Ricky Martin\Documents\crop\User_Input\standscaler.pkl', 'rb'))
-ms = pickle.load(open(r'C:\Users\Ricky Martin\Documents\crop\User_Input\minmaxscaler.pkl', 'rb'))
+model = pickle.load(open(r'random_forest_model.pkl', 'rb'))
+sc = pickle.load(open(r'standscaler.pkl', 'rb'))
+ms = pickle.load(open(r'minmaxscaler.pkl', 'rb'))
 
 # creating flask app
 app = Flask(__name__)
